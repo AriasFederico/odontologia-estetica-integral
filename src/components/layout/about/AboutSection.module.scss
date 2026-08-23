@@ -1,0 +1,86 @@
+.aboutSection {
+}
+.container {    
+    border-bottom: 1px solid $color-border;
+}
+
+.badge {
+    color: $white;
+}
+
+.aboutHero {
+    padding: 9rem 0;
+    background-color: $color-primary;
+    
+    .content {
+        padding: 0 $space-2;
+        max-width: 1240px;
+        margin: 0 auto;
+        color: $white;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        .title {
+            max-width: 800px;
+        }
+    }
+}
+
+.metrics {
+    display: flex;
+    max-width: 1240px;
+    margin: 0 auto;
+
+    .item {
+        flex: 1;
+        text-align: center;
+        padding: $space-4;
+        border: 1px solid $color-border;
+
+        p {
+            font-size: $font-2xl;
+            color: $color-primary;
+        }
+
+        span {
+            font-size:12px;
+            color: $foreground-muted;
+        }
+    }
+}
+
+.contentAbout {
+    padding: 4rem $space-2;
+    max-width: 1240px;
+    margin: 0 auto;
+    @include desktop(){
+        display: flex;
+        // gap: $space-6;
+    }
+
+    p {
+        flex: 1;
+        @include desktop(){
+            padding-right: 5%;
+        }
+    }
+
+    .ctaContainer {
+        flex: 1;
+        margin-top: $space-4;
+        
+        p {
+            color: $foreground-muted;
+            font-size: $font-sm;
+            margin-bottom: $space-3;
+        }
+
+        @include desktop(){
+            margin: 0;
+        }
+
+    }
+
+}

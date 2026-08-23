@@ -1,0 +1,62 @@
+.header {
+    @include desktop(){
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .line {
+        margin-top: $space-3;
+        width: 4rem;
+        height: 1px;
+        background-color: $color-primary;
+    }
+
+}
+
+.items {
+    // display: flex;
+    margin-top: $space-6;
+
+    @include desktop(){
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap:$space-1;
+    }
+
+    .item {
+        border: 1px solid $color-border;
+        padding: $space-3;
+        margin-bottom: $space-2;
+
+        @include desktop(){
+            margin: 0;
+        }
+
+        .user {
+            display: flex;
+            align-items: center;
+            gap: $space-2;
+
+            .initials {
+                background-color: $color-primary-muted;
+                color: $color-primary;
+                width: fit-content;
+                padding: $space-1;
+            }
+            .name {}
+        }
+
+        .stars {
+            // margin-top: $space-2;
+            display: flex;
+            gap: .2rem;
+            color: $color-yellow;
+        }
+
+        .review {
+            margin-top: $space-3;
+            font-size: $font-sm;
+            color: $foreground-muted;
+        }
+    }
+}

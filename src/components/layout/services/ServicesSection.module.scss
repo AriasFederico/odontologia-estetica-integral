@@ -1,0 +1,75 @@
+.line {
+    margin-top: $space-3;
+    width: 4rem;
+    height: 1px;
+    background-color: $color-primary;
+}
+
+.items {
+    margin-top: $space-6;
+}
+
+.header {
+    @include desktop(){
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.cta {
+    margin-top: $space-3;
+}
+
+.items {
+
+    @include desktop(){
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: $space-1;
+    }
+
+    .itemLine {
+        width: 0;
+        height: 1px;
+        background-color: $color-primary;
+        margin-top: $space-3;
+        transition: $transition-normal;
+    }
+
+    
+
+}
+
+.item {
+    border: 1px solid $color-border;
+    padding: $space-3;
+    margin-bottom: $space-2;
+    
+    &:hover {
+        background-color: #eeeeee52;
+        .itemLine {
+            width: 40%;
+        }
+    }
+
+    @include desktop(){
+        margin: 0;
+    }
+
+    .index {
+        color: $color-primary-muted;
+        font-size: $font-2xl;
+    }
+
+    .name {
+        margin-top: $space-1;
+        font-size: $font-lg;
+        font-weight: $weight-medium;
+    }
+
+    .desc {
+        margin-top: $space-2;
+        color: $foreground-muted;
+    }
+}

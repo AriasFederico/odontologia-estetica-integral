@@ -1,0 +1,32 @@
+.container {
+
+    .badge {
+        color: #ffffffa9;
+    }
+
+    .title {
+        color: $white;
+        &::after {
+            content:' nuestro arte.';
+            display: block;
+        }
+    }
+
+    .subtitle {
+        margin-top: $space-2;
+        color: #ffffffa9;
+        max-width: 580px;
+    }
+    
+    .ctas {
+        margin-top: $space-3;
+        display: flex;
+        flex-direction: column;
+        gap: $space-1;
+    
+        @include desktop(){
+            flex-direction: row;
+            gap: $space-2;
+        }
+    }
+}

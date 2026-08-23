@@ -1,0 +1,39 @@
+.badge {
+    color: $white;
+}
+
+.title {
+    color: $white;
+}
+
+.line {
+    margin-top: $space-3;
+    width: 4rem;
+    height: 1px;
+    background-color: $white;
+}
+
+.items {
+    margin-top: $space-6;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    @include desktop(){
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    
+    .item {
+        padding: $space-3;
+        border: 1px solid #7091913f;
+        color: $white;
+        // font-size: $font-sm;
+    }
+}
+
+.moreInfo {
+    margin-top: $space-4;
+    display: block;
+    width: 100%;
+    font-size: $font-sm;
+    color: $white;
+}

@@ -1,0 +1,52 @@
+.container {
+
+    @include desktop(){
+        display: flex;
+        gap: $space-9;
+    }
+}
+
+.header, .map {
+    flex: 1;
+}
+
+.line {
+    margin-top: $space-3;
+    width: 4rem;
+    height: 1px;
+    background-color: $color-primary;
+}
+
+.infoContainer {
+    margin-top: $space-6;
+
+    .item {
+        display: flex;
+        gap:$space-2;
+        margin-bottom: $space-3;
+    }
+
+    .itemFlex {
+        
+        span {
+            font-size: $font-sm;
+            color: $foreground-muted;
+        }
+    }
+
+    .icon {
+        color: $color-primary;
+    }
+}
+
+.cta {
+    margin-top: $space-4;
+}
+
+.map {
+    margin-top: $space-6;
+
+    @include desktop(){
+        margin: 0;
+    }
+}

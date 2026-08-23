@@ -1,0 +1,36 @@
+.footer {
+    background-color: #111110d7;
+
+    .container {
+        max-width: 1240px;
+        margin: 0 auto;
+        padding: $space-4 $space-2;
+        color: $white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:$space-2;
+        text-align: center;
+
+        @include desktop(){
+            flex-direction: row;
+            text-align: start;
+            justify-content: space-between;
+        }
+    }
+}
+
+.location {
+    font-size: 12px;
+}
+
+.cta {
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+    font-size: $font-sm;
+}
+
+.copyright {
+    font-size: 12px;
+}

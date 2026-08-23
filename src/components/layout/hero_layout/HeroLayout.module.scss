@@ -1,0 +1,54 @@
+.heroLayout {
+  // --- CONFIGURACIÓN PARA MOBILE ---
+  padding: $space-9 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+
+  &.soft {background-color: $bg-soft;}
+  &.light {background-color: $white;}
+  &.bgImage {
+    background-image: url('https://images.unsplash.com/photo-1670250721717-889b17349fc4?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: 100vh;
+      /* El gradiente: empieza sólido, se aclara al medio y se vuelve muy transparente al final */
+      background: linear-gradient(
+        to right, 
+        rgba(#1f1f1f, 0.70) 50%,   /* Inicio: semi-opaco */
+        rgba(#1f1f1f, 0.35) 80%,  /* Medio: más transparente y más temprano */
+        rgba(#1f1f1f, 0.10) 100%     /* Final: completamente transparente */
+      );
+    }
+  }
+  
+  .container {
+    z-index: 100;
+    width: 100%;
+    @include container;
+  }
+
+  // --- CONFIGURACIÓN PARA DESKTOP ---
+  @include desktop {
+    padding:0;
+    
+    .container {
+      // comentar width si es un hero con bg
+        // width: auto;
+      // comentar width si es un hero con bg
+        display: flex;
+        align-items: center;
+        gap: $space-4;
+      }
+    }
+}

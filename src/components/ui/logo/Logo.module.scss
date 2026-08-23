@@ -1,0 +1,28 @@
+.logo {
+    display: flex;
+    align-items: center;
+    gap: $space-1;
+    // flex-direction: column;
+
+    .clinicName {
+        font-size: $font-lg;
+        font-weight: $weight-medium;
+        color: $color-primary;
+        letter-spacing: 2px;
+    }
+
+    .secondName {
+        display: none;
+        
+        @include desktop(){
+            letter-spacing: 1px;
+            font-size: 12px;
+            display: block;
+            color: currentColor;
+        }
+    }
+
+    .sm {
+        font-size: $font-lg;
+    }
+}

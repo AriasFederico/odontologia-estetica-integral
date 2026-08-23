@@ -1,0 +1,59 @@
+.line {
+    margin-top: $space-3;
+    width: 4rem;
+    height: 1px;
+    background-color: $color-primary;
+}
+
+.items {
+    margin-top: $space-6;
+
+    @include desktop(){
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: $space-2;
+    }
+}
+
+// acordate de line d title
+
+.item {
+    display: flex;
+    flex-direction: column;
+    padding: $space-4 $space-2;
+    border-bottom: 1px solid $color-border;
+    margin-bottom: $space-2;
+
+    @include desktop(){
+        padding: $space-4;
+        border: 0;
+        border-left: 1px solid $color-border;
+    }
+
+    .initials {
+        background-color: $color-primary;
+        width: fit-content;
+        padding: $space-2;
+        color: $white;
+    }
+
+    .title {
+        margin-top: $space-2;
+        letter-spacing: 2px;
+    }
+
+    .title, .speciality {
+        color: $foreground-muted;
+        font-size: $font-sm;
+    }
+
+    .name {
+        font-size: $font-lg;
+    }
+
+    .speciality {}
+
+    .cta {
+        margin-top: $space-2;
+    }
+}

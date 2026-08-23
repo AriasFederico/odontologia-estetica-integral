@@ -1,0 +1,16 @@
+.badge {
+	display: flex;
+	align-items: center;
+	gap: $space-1;
+	width: fit-content;
+	border-radius: $radius-lg;
+	margin-bottom: $space-2;
+}
+
+.text {
+	font-size: 12px;
+	letter-spacing: 2px;
+	color: $color-primary;
+}
+
+
