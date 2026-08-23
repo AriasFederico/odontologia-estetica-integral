@@ -9,7 +9,8 @@ const buildWaLink = (message) =>
 
 const whatsappMessages = {
   hero: `Hola ${CLINIC_NAME}!, quisiera consultar por un turno.`,
-  coverage: `Hola! Quería consultar si atienden con mi obra social.`,
+  coverage: `Hola ${CLINIC_NAME}!, quisiera consultar si atienden con mi obra social.`,
+  services: `Hola ${CLINIC_NAME}!, quisiera consultar por un servicio`,
 };
 
 const clinicInfo = {
