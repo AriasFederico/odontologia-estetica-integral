@@ -4,7 +4,7 @@ import { SectionLayout } from '../';
 import styles from './LocationSection.module.scss';
 
 export const LocationSection = ({ data }) => {
-  const { badge, title, items, cta } = data;
+  const { badge, title, items, cta, coordenates } = data;
   return (
     <SectionLayout id={'location'}>
       <div className={styles.container}>
@@ -38,7 +38,7 @@ export const LocationSection = ({ data }) => {
         </div>
 
         <div className={styles.map}>
-          <MapComponent />
+          <MapComponent coordenates={coordenates} />
         </div>
 
         {/* map */}

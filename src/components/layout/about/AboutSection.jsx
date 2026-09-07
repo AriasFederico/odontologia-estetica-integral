@@ -44,6 +44,7 @@ export const AboutSection = ({ data }) => {
             />
           </div>
         </div>
+        
       </div>
     </section>
   );

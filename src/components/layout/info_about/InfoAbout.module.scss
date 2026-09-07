@@ -24,8 +24,13 @@
     .infoItems {
         display: flex;
         align-items: center;
+        flex-direction: column;
         gap: $space-2;
         font-size: $font-sm;
+
+        @include desktop(){
+            flex-direction: row;
+        }
     }
 
     .item {
@@ -36,6 +41,7 @@
     }
 
     .cta {
+        margin-top: $space-1;
         display: flex;
         gap: $space-1;
         font-size: $font-sm;

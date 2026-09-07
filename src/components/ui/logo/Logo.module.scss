@@ -5,10 +5,15 @@
     // flex-direction: column;
 
     .clinicName {
-        font-size: $font-lg;
-        font-weight: $weight-medium;
-        color: $color-primary;
-        letter-spacing: 2px;
+        display: none;
+
+        @include desktop(){
+            display: flex;
+            font-size: $font-lg;
+            font-weight: $weight-medium;
+            color: $color-primary;
+            letter-spacing: 2px;
+        }
     }
 
     .secondName {
@@ -24,5 +29,9 @@
 
     .sm {
         font-size: $font-lg;
+    }
+
+    .icon {
+        width: 2rem;
     }
 }

@@ -6,14 +6,30 @@
 }
 
 .items {
-    margin-top: $space-6;
-
-    @include desktop(){
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: $space-2;
+    flex: 1 ;
     }
-}
+    
+    .imgContainer {
+        flex: 1 ;
+    }
+
+    .image {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+    
+    .content {
+        margin-top: $space-6;
+        
+        @include desktop(){
+            display: flex;
+            align-items: center;
+            gap: $space-4;
+        }
+    }
+
+
 
 // acordate de line d title
 

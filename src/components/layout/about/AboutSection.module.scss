@@ -32,6 +32,11 @@
     display: flex;
     max-width: 1240px;
     margin: 0 auto;
+    flex-direction: column;
+
+    @include desktop(){
+        flex-direction: row;
+    }
 
     .item {
         flex: 1;

@@ -3,9 +3,9 @@
 // ==========================================
 
 // Tonos Principales (Cambias estos 3 por cada cliente/marca)
-$color-primary:         #2B5F5F;
-$color-primary-muted:   rgba(#2B5F5F, 0.15); // Uso de rgba/SCSS para transparencias limpias
-$color-primary-dark:    #204949;
+$color-primary:         #4688ab;
+$color-primary-muted:   rgba(#4688ab, 0.15); // Uso de rgba/SCSS para transparencias limpias
+$color-primary-dark:    #3d728f;
 
 // Colores de Estado / Feedback (Estándar)
 $color-success:            #34a853;
@@ -20,7 +20,7 @@ $color-yellow: #f9bb04;
 $white:                 #ffffff;
 $bg-main:               #f7f7f7; // Blanco limpio (ideal para Salud)
 $bg-soft:               #f4f8f9; // Gris muy suave para alternar secciones
-$bg-dark:               #2B5F5F; // Para footers o secciones contrastadas
+$bg-dark:               #4688ab; // Para footers o secciones contrastadas
 
 $foreground:            #111111; // Texto principal (casi negro para máxima legibilidad)
 $foreground-muted:      #636363; // Texto secundario (párrafos, fechas, badges)

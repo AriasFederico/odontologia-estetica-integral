@@ -7,8 +7,9 @@
     .title {
         color: $white;
         &::after {
-            content:' nuestro arte.';
+            content:' dedicación.';
             display: block;
+            color: $color-primary;
         }
     }
 

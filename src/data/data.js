@@ -1,6 +1,8 @@
-const CLINIC_NAME = 'SONRISA+';
-const SECOND_NAME = 'ODONTOLOGÍA';
-const PHONE_NUMBER = '5491112345678';
+import icon from '../../public/icon.png';
+
+const CLINIC_NAME = 'Odontología';
+const SECOND_NAME = 'Estética Integral';
+const PHONE_NUMBER = '5491124011047';
 
 const buildWaLink = (message) =>
   `https://wa.me/${PHONE_NUMBER}?text=${encodeURIComponent(message)}`;
@@ -8,15 +10,15 @@ const buildWaLink = (message) =>
 // profesionales
 
 const whatsappMessages = {
-  hero: `Hola ${CLINIC_NAME}!, quisiera consultar por un turno.`,
-  coverage: `Hola ${CLINIC_NAME}!, quisiera consultar si atienden con mi obra social.`,
-  services: `Hola ${CLINIC_NAME}!, quisiera consultar por un servicio`,
+  hero: `Hola!, quisiera consultar por un turno.`,
+  coverage: `Hola!, quisiera consultar si atienden con mi obra social.`,
+  services: `Hola!, quisiera consultar por un servicio`,
 };
 
 const clinicInfo = {
-  location: 'Av. Corrientes 1234, Piso 3 — CABA',
-  hours: 'Lun-Vie: 9:00-20:00 · Sáb: 9:00-14:00',
-  tel: '(011) 1234-5678',
+  location: 'Av centenario 5432 - Quilmes, Buenos Aires 1882',
+  hours: 'Lun-Sáb: 9:00-19:00 · Dom: Urgencias',
+  tel: '(011) 2401-1047',
 };
 
 export const dataOdont = {
@@ -25,8 +27,8 @@ export const dataOdont = {
     secondName: SECOND_NAME,
 
     logo: {
-      // src:'imagen',
-      // alt:''
+      src: icon,
+      alt: 'Odontología Estética Integral',
       href: '/',
     },
   },
@@ -34,7 +36,7 @@ export const dataOdont = {
   header: {
     navLinks: [
       { id: 'services', label: 'Servicios', href: '#services' },
-      { id: 'coverage', label: 'Obras sociales', href: '#coverage' },
+      // { id: 'coverage', label: 'Obras sociales', href: '#coverage' },
       { id: 'location', label: 'Ubicación', href: '#location' },
       { id: 'reviews', label: 'Opiniones', href: '#reviews' },
     ],
@@ -47,10 +49,10 @@ export const dataOdont = {
   },
 
   hero: {
-    badge: 'Odontología · Buenos Aires',
-    title: 'Tu sonrisa,',
+    badge: 'Odontología · Ezpeleta',
+    title: 'Cuidamos tu sonrisa con ',
     subtitle:
-      'Atención personalizada con tecnología de vanguardia. Más de 15 años cuidando la salud bucal de tu familia.',
+      'Atención odontológica personalizada y más de 12 años acompañando el cuidado de tu salud bucal.',
     cta: [
       {
         label: 'Pedir turno por WhatsApp',
@@ -79,16 +81,16 @@ export const dataOdont = {
       },
     },
     badge: 'quiénes somos',
-    title: 'Creemos que cada sonrisa cuenta una historia única.',
+    title: 'Más de 12 años acompañando el cuidado de tu sonrisa.',
     metrics: [
-      { stat_number: '+2.400', stat_label: 'Pacientes atendidos' },
-      { stat_number: '15', stat_label: 'Años de experiencia' },
-      { stat_number: '40+', stat_label: 'Obras sociales' },
+      { stat_number: 'Atención', stat_label: 'Personalizada' },
+      { stat_number: '+12', stat_label: 'Años de experiencia' },
+      { stat_number: 'Odontología', stat_label: 'Integral' },
     ],
     text_primary:
-      'Somos un equipo de odontólogos comprometidos con la salud y el bienestar de nuestros pacientes. Desde 2009 brindamos atención personalizada en el corazón de Buenos Aires.',
+      'En Odontología Estética Integral trabajamos para brindar una atención odontológica cercana y personalizada, acompañando a cada paciente en el cuidado de su salud bucal.',
     text_secondary:
-      'Combinamos tecnología de vanguardia con un trato cercano y humano. Nuestro consultorio está diseñado para que cada visita sea una experiencia tranquila y confortable.',
+      'Contamos con atención especializada en distintas áreas de la odontología, buscando ofrecer soluciones adaptadas a las necesidades de cada paciente y una experiencia de atención profesional y humana.',
     cta: {
       label: 'Pedir turno',
       href: buildWaLink(whatsappMessages.hero),
@@ -99,8 +101,8 @@ export const dataOdont = {
   },
 
   services: {
-    badge: 'lo que ofrecemos',
-    title: 'Servicios',
+    badge: 'tratamientos',
+    title: 'Cuidamos tu sonrisa',
     cta: {
       label: 'Consultar por un servicio',
       href: buildWaLink('holo'),
@@ -110,61 +112,43 @@ export const dataOdont = {
     },
     items: [
       {
-        name: 'Odontología General',
-        desc: 'Diagnóstico, prevención y tratamiento integral para el cuidado de tu salud bucal.',
+        name: 'Extracciones',
+        desc: 'Realizamos extracciones dentales de manera segura y cuidadosa, priorizando el bienestar y la comodidad de cada paciente.',
       },
       {
-        name: 'Estética Dental',
-        desc: 'Carillas, blanqueamiento y diseño de sonrisa con resultados naturales y duraderos.',
+        name: 'Odontología estética',
+        desc: 'Tratamientos orientados a mejorar la apariencia de tu sonrisa, buscando resultados naturales y acordes a cada persona.',
       },
       {
-        name: 'Implantes Dentales',
-        desc: 'Soluciones permanentes para la recuperación funcional y estética de piezas perdidas.',
+        name: 'Blanqueamiento dental',
+        desc: 'Devolvé luminosidad a tu sonrisa con un tratamiento pensado para lograr dientes más blancos y una apariencia natural.',
       },
       {
         name: 'Ortodoncia',
-        desc: 'Tratamientos con brackets y alineadores invisibles para corregir la posición dental.',
+        desc: 'Corregimos la posición de los dientes y mejoramos la mordida para lograr una sonrisa más alineada y saludable.',
       },
       {
-        name: 'Endodoncia',
-        desc: 'Tratamiento de conducto con tecnología de última generación y mínima incomodidad.',
+        name: 'Implantes',
+        desc: 'Una alternativa para reemplazar piezas dentales perdidas y recuperar la funcionalidad y estética de tu sonrisa.',
       },
       {
-        name: 'Odontopediatría',
-        desc: 'Atención especializada para niños en un entorno cálido, amigable y seguro.',
+        name: 'Prótesis',
+        desc: 'Soluciones personalizadas para reemplazar piezas dentales y recuperar la comodidad, funcionalidad y estética al sonreír.',
       },
     ],
   },
 
   team: {
-    badge: 'nuestro equipo',
-    title: 'Profesionales',
+    badge: 'profesional',
+    title: 'Atención profesional y personalizada.',
     professionals: [
       {
-        name: 'Dra. Valentina Herrera',
-        initials: 'VH',
+        name: '[Nombre del Profesional]',
+        initials: 'NP',
         title: 'Directora Clínica',
-        speciality: 'Ortodoncia',
+        speciality: 'Especialidad',
         message: buildWaLink(
           'Hola!, quisiera consultar con la Dra. Valentina Herrera',
-        ),
-      },
-      {
-        name: 'Dr. Martín Rodríguez',
-        initials: 'MR',
-        title: 'Especialista',
-        speciality: 'Implantología · Cirugía Oral',
-        message: buildWaLink(
-          'Hola!, quisiera consultar con el Dr. Martín Rodríguez',
-        ),
-      },
-      {
-        name: 'Dra. Camila Soto',
-        initials: 'CS',
-        title: 'Especialista',
-        speciality: 'Estética Dental · Blanqueamiento',
-        message: buildWaLink(
-          'Hola!, quisiera consultar con la Dra. Camila Soto',
         ),
       },
     ],
@@ -174,47 +158,41 @@ export const dataOdont = {
     badge: 'Reseñas',
     title: 'Lo que dicen nuestros pacientes',
     rating_card: {
-      rating: '5.0',
+      rating: '4.8',
       stars: 5,
-      reviews: '148 reseñas',
+      reviews: '5 reseñas',
     },
 
     items: [
       {
-        name: 'Marcela Ríos',
-        initials: 'MR',
+        name: 'Romina Avalos',
+        initials: 'RA',
         rating: 5,
-        text: 'Excelente atención desde el primer momento. La Dra. Herrera es muy profesional y explica todo con claridad. El consultorio es moderno y limpio. 100% recomendado.',
+        text: 'Hoy fui  a sacarme una muela. La atención  fue excelente. Muy buenos profesionales.',
       },
       {
-        name: 'Gonzalo Pereyra',
-        initials: 'GP',
+        name: 'Aylen Bravo',
+        initials: 'AB',
         rating: 5,
-        text: 'Me realizaron un implante y quedé muy conforme. El Dr. Rodríguez es muy cuidadoso y el postoperatorio fue mucho más llevadero de lo que esperaba.',
+        text: 'Me hicieron la extracción de una muela que tenía destrozada, no me dolió nada, PERO NADA😭✨ impecable la atención y muy profesionales, tengo que volver para una limpieza 🙏🏻…',
       },
       {
-        name: 'Sofía Blanco',
-        initials: 'SB',
+        name: 'Belén.C',
+        initials: 'BC',
         rating: 5,
-        text: 'Vine por el blanqueamiento y no podría estar más feliz. La Dra. Soto es increíble, muy atenta y profesional. Ya agendé el turno para mi marido también.',
+        text: 'Buena atención.',
       },
       {
-        name: 'Tomás Aguirre',
-        initials: 'TA',
+        name: 'Agustina Santanocito',
+        initials: 'BC',
         rating: 5,
-        text: 'Llevé a mis hijos y la atención fue excelente. Los chicos salieron contentos, que no es poco. Muy buen equipo y trato humano.',
+        text: '',
       },
       {
-        name: 'Lucía Ferreyra',
-        initials: 'LF',
+        name: 'Cintia O.F',
+        initials: 'COF',
         rating: 5,
-        text: 'Empecé ortodoncia hace 4 meses y los cambios ya son notables. Muy conformes con los resultados y con la atención personalizada.',
-      },
-      {
-        name: 'Diego Méndez',
-        initials: 'DM',
-        rating: 5,
-        text: 'Fui con mucho miedo y me fui tranquilo. El equipo hace todo para que la experiencia sea lo más cómoda posible. Gran profesionalismo.',
+        text: '',
       },
     ],
   },
@@ -236,11 +214,11 @@ export const dataOdont = {
       { icon: 'tel', label: 'Teléfono', desc: clinicInfo.tel },
     ],
 
-    coordenates: ``,
+    coordenates: `-34.75493765992903, -58.23785322982126`,
 
     cta: {
       label: 'Cómo llegar',
-      href: 'https://www.google.com/maps',
+      href: 'https://www.google.com/maps/place/Consultorio+Odontol%C3%B3gico+Bracket+Day/@-34.7549385,-58.2382263,19.43z/data=!4m6!3m5!1s0x95a32ee0804b003f:0x1d859840f29f9613!8m2!3d-34.7549541!4d-58.2378535!16s%2Fg%2F11lf025lyh?entry=ttu&g_ep=EgoyMDI2MDkwMi4wIKXMDSoASAFQAw%3D%3D',
       size: 'sm',
       icon: 'send',
     },

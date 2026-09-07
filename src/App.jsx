@@ -30,7 +30,7 @@ function App() {
       <HeroSection data={hero} />
       <AboutSection data={about} />
       <ServicesSection data={services} />
-      <CoverageSection data={coverage} />
+      {/* <CoverageSection data={coverage} /> */}
       <TeamSection data={team} />
       <ReviewsSection data={reviews} />
       <LocationSection data={location} />

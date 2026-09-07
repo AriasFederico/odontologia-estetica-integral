@@ -11,8 +11,10 @@ import styles from './Logo.module.scss';
 
 export const Logo = ({ size }) => {
   const { branding } = dataOdont;
+  const { logo } = branding;
   return (
     <a href={branding.logo.href} className={styles.logo}>
+      <img src={logo.src} alt={logo.alt} className={styles.icon} />
       <p className={`${styles.clinicName} ${styles[size]}`}>
         {branding.clinicName}
       </p>

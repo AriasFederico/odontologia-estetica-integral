@@ -1,15 +1,16 @@
 @keyframes headerScroll {
   from {}
   to {
+    padding: .5rem;
+  }
+}
+
+.header {
     background-color: $bg-soft;
     box-shadow: $shadow-sm;
     backdrop-filter: blur(10px);
     color: $foreground;
     border-bottom: 1px solid $color-border;
-  }
-}
-
-.header {
     z-index: 500;
     position:fixed;
     left: 0;
@@ -20,7 +21,6 @@
     animation: headerScroll linear both;
     animation-timeline: scroll();
     animation-range: 0 2rem;
-    color: #ffffffcb;
 
     .container {
         @include container();
@@ -38,7 +38,6 @@
         align-items: center;
         gap: $space-4;
         font-size: $font-sm;
-        // color: $foreground-muted;
 
         a {
           font-size: 12px;
