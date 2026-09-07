@@ -189,6 +189,12 @@ export const dataOdont = {
         text: 'El consultorio del dr. Oliver y equipo es uno de los mejores de la zona muy buena atención muy educados y muy dedicados en sus funciones son muy agradables y a medida que te están tratando te consulta en todo momento si están bien son muy cuidadosos en su materia para evitar que los pacientes tengan algún dolor, estan muy pendiente para encontrar mucha conformidad con los trabajos que realicen y resulten perfecto yo particularmente realmente estoy muy conforme con los tratamientos obtenidos por ellos . Los recomiendo sin duda. co',
       },
       {
+        name: 'Rosita Irala',
+        initials: 'RI',
+        rating: 5,
+        text: 'Excelente atención y buen servicio...estamos muy satisfechas con mi hija, seguiremos eligiendolos',
+      },
+      {
         name: 'Cata Romero Ramos',
         initials: 'CR',
         rating: 5,
