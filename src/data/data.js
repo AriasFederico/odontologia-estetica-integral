@@ -189,10 +189,10 @@ export const dataOdont = {
         text: 'El consultorio del dr. Oliver y equipo es uno de los mejores de la zona muy buena atención muy educados y muy dedicados en sus funciones son muy agradables y a medida que te están tratando te consulta en todo momento si están bien son muy cuidadosos en su materia para evitar que los pacientes tengan algún dolor, estan muy pendiente para encontrar mucha conformidad con los trabajos que realicen y resulten perfecto yo particularmente realmente estoy muy conforme con los tratamientos obtenidos por ellos . Los recomiendo sin duda. co',
       },
       {
-        name: 'Sofi Mar',
-        initials: 'COF',
+        name: 'Cata Romero Ramos',
+        initials: 'CR',
         rating: 5,
-        text: 'Fui de urgencia, la atención fue excelente muy buenos profesionales',
+        text: 'El 26/12/24 fuimos de urgencia con mi marido, lo encontramos por Google y no dudamos ya que había un diente con nervio expuesto, no era solamente estético, el dr súper amable, solucionó por completo el problema que había sido tratado por otro dentista de manera ineficiente. Ya pasó 1 año y medio y el arreglo está excelente.',
       },
     ],
   },
