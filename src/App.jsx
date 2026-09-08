@@ -1,4 +1,6 @@
 import './App.scss';
+import { Analytics } from '@vercel/analytics/next';
+
 import {
   AboutSection,
   CoverageSection,
@@ -35,6 +37,7 @@ function App() {
       <ReviewsSection data={reviews} />
       <LocationSection data={location} />
       <Footer data={footer} />
+      <Analytics />
     </>
   );
 }
