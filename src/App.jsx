@@ -1,6 +1,5 @@
 import './App.scss';
-import { Analytics } from '@vercel/analytics/next';
-
+import { Analytics } from '@vercel/analytics/react';
 import {
   AboutSection,
   CoverageSection,
