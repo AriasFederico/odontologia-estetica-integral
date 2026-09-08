@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react';
 import './App.scss';
 import {
   AboutSection,
@@ -35,6 +36,7 @@ function App() {
       <ReviewsSection data={reviews} />
       <LocationSection data={location} />
       <Footer data={footer} />
+      <Analytics />
     </>
   );
 }
